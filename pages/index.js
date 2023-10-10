@@ -1,9 +1,17 @@
+import Footer from '@/components/footer';
+import Navbar from '@/components/navbar'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 
 
 
 export default function Home() {
+
+  const [on , setOn] =useState(false);
+  function switchOn () {
+    setOn(!on)
+  }
   return (
     <>
       <Head>
@@ -15,34 +23,100 @@ export default function Home() {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
       </Head>
+      
       <div className="page">
         <div className="innerpage">
 
             <div className="bg"></div>
+        <Navbar>
+            <div className="landingpage">
+              <h1>Interior and <br /> Exterior Designing</h1>
+              <h2>Guruvel Assosiate</h2>
+            </div>
 
+            <div className="line">
+              <div className="drawline"></div>
+                <div className="img">
+                  <Image src="/image/arrow.png" height={50} width={50} alt=''/>
 
-            <div className="navbar">
-              <div className="inner">
-                <div className="logo">
-                  <Image src="/logo.png" width={200} height={70} alt=""/>
                 </div>
-                <ul className='nav-links'>
-                  <li>Overview</li>
-                  <li>Exterior</li>
-                  <li>Interior</li>
-                  <li>Our Team</li>
-                  <li>Contact us</li>
-                </ul>
-              </div> 
             </div>
+            
 
-            <div className="test">
-              <h1>hello</h1>
-            </div>
+            
+        </Navbar>
+
 
         </div>
+
+        {/* landingcards */}
+
+
+        <div className="landingcards">
+          <div className="card one">
+            <div className="inner">
+              <div className={on ? 'left textwhite': 'left'}>
+                  <h1>Interior Designs</h1>
+              </div>
+              <div className={on ? 'right swap': 'right'}>
+                <div className="switch">
+                  <div className="inner" onClick={()=>switchOn()}></div>
+
+                </div>
+                <div className={on ? 'boxes on': 'boxes'}>
+                  <div className="box1">
+                    <Image src="/image/Interior1.jpeg" alt='' fill={true}/>
+                  </div>
+                  <div className="box1">
+                    <Image src="/image/Interior2.jpeg" alt='' fill={true}/>
+                  </div>
+                  <div className="box1">
+                    <Image src="/image/Interior3.jpeg" alt='' fill={true}/>
+                  </div>
+                  <div className="box1">
+                    <Image src="/image/Interior4.jpeg" alt='' fill={true}/>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+          <div className="card two">
+            <div className="inner">
+              <div className={on ? 'left textwhite': 'left'}>
+                    <div className="sun" onClick={()=>switchOn()}></div>
+                    <h1>Exterior Designs</h1>
+                </div>
+                <div className="right">
+                  
+                  
+                  <div className={on ? 'boxes on': 'boxes'}>
+                    <div className="box1">
+                      <Image src="/image/exterior1.jpeg" alt='' fill={true}/>
+                    </div>
+                    <div className="box1">
+                      <Image src="/image/exterior2.jpeg" alt='' fill={true}/>
+                    </div>
+                    <div className="box1">
+                      <Image src="/image/exterior3.jpeg" alt='' fill={true}/>
+                    </div>
+                    <div className="box1">
+                      <Image src="/image/exterior4.jpeg" alt='' fill={true}/>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+
         
       </div> 
+
+      <Footer/>
+
+      
+      
     </>
   )
 }
