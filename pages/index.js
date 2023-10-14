@@ -1,5 +1,5 @@
-import Footer from '@/components/footer';
-import Navbar from '@/components/navbar'
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -31,7 +31,7 @@ export default function Home() {
         <Navbar>
             <div className="landingpage">
               <h1>Interior and <br /> Exterior Designing</h1>
-              <h2>Guruvel Assosiate</h2>
+              <h2>Guruvel Assosiates</h2>
             </div>
 
             <div className="line">
@@ -60,7 +60,9 @@ export default function Home() {
               </div>
               <div className={on ? 'right swap': 'right'}>
                 <div className="switch">
-                  <div className="inner" onClick={()=>switchOn()}></div>
+                  <div className="inner" onClick={()=>switchOn()}>
+                    <p>switch {on ? "off":"on"}</p>
+                  </div>
 
                 </div>
                 <div className={on ? 'boxes on': 'boxes'}>
