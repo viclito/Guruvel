@@ -15,7 +15,7 @@ const Navbar = ({children}) => {
         <div className="navbar">
                 <div className="inner">
                     <div className="logo">
-                      <Image src="/image/logo.png" width={200} height={70} alt=""/>
+                      <Image src="/image/logo.png" width={100} height={70} alt=""/>
                     </div>
                     <div className={active ? 'active navigation':'navigation'}>
                       <ul className='nav-links'>
