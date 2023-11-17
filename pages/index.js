@@ -65,16 +65,16 @@ export default function Home() {
                 </div>
                 <div className={on ? 'boxes on': 'boxes'}>
                   <div className="box1">
-                    <Image src="/image/Interior1.jpeg" alt='' fill={true}/>
+                    <Image src="/image/interior1.jpeg" alt='' fill={true}/>
                   </div>
                   <div className="box1">
-                    <Image src="/image/Interior2.jpeg" alt='' fill={true}/>
+                    <Image src="/image/interior2.jpeg" alt='' fill={true}/>
                   </div>
                   <div className="box1">
-                    <Image src="/image/Interior3.jpeg" alt='' fill={true}/>
+                    <Image src="/image/interior3.jpeg" alt='' fill={true}/>
                   </div>
                   <div className="box1">
-                    <Image src="/image/Interior4.jpeg" alt='' fill={true}/>
+                    <Image src="/image/interior4.jpeg" alt='' fill={true}/>
                   </div>
                   </div>
               </div>
