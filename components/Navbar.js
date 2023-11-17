@@ -22,8 +22,8 @@ const Navbar = ({children}) => {
                         <li><Link href='/' passHref> <div className='anchor'>Overview</div> </Link> </li>
                         <li><Link href='/interior'><div className='anchor'>Interior</div> </Link></li>
                         <li><Link href='/exterior'><div className='anchor'>Exterior</div> </Link></li>
-                        <li>Our Team</li>
-                        <li>Contact us</li>
+                        <li><Link href='/about'><div className='anchor'>About Us</div> </Link></li>
+                        
                       </ul>
                     </div>
                     <div className="hamburger" onClick={()=> displayingNav()}>

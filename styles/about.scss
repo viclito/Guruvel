@@ -1,0 +1,132 @@
+.about{
+    background: linear-gradient(to bottom right, #4b4b4b, #262626);
+    padding: 0 30px;
+    color: white;
+    .innerabout{
+        max-width: 1200px;
+        padding: 50px 20px;
+        margin: auto;
+        h1{
+            font-size: 24px;
+            font-weight: 800;
+            text-align: center;
+            
+        }
+        h2{
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            padding: 20px 0;
+            span{
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+        .siva{
+            padding: 20px 0;
+            display: flex;
+            width: 100%;
+            .left{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                padding: 20px 10px;
+                .img{
+                    position: relative;
+                    height: 160px;
+                    width: 160px;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 2px 2px 3px #ccc;
+                }
+
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                .name{
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-align: center;
+                    padding: 20px 0;
+                    span{
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .sathish{
+            padding: 20px 0;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            .left{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                padding: 20px 10px;
+                .img{
+                    position: relative;
+                    height: 160px;
+                    width: 160px;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 2px 2px 3px #ccc;
+                }
+
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                .name{
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-align: center;
+                    padding: 20px 0;
+                    span{
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:630px) {
+    .about{
+        .innerabout{
+            .siva{
+                flex-direction: column;
+                .right{
+                    padding-top: 20px;
+                }
+            }
+            .sathish{
+                flex-direction: column;
+                .right{
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:490px){
+    .about{
+        .innerabout{
+            .siva{
+                .left{
+                    width: 100%;
+                }
+            }
+            .sathish{
+                .left{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}

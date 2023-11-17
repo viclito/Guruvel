@@ -31,7 +31,7 @@ export default function Home() {
         <Navbar>
             <div className="landingpage">
               <h1>Interior and <br /> Exterior Designing</h1>
-              <h2>Guruvel Assosiates</h2>
+              <h2>Guruvel Associates</h2>
             </div>
 
             <div className="line">
