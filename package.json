@@ -1,9 +1,13 @@
 {
+  "homepage": "https://viclito.github.io/Guruvel",
   "name": "guruvelassosiate",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,7 +16,8 @@
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.69.1"
+    "sass": "^1.69.1",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "eslint": "^8",

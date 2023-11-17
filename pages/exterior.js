@@ -86,7 +86,7 @@ const Exterior = () => {
                     <div className="texts">
                         <h1>COMPANIES CONSTRUCTION</h1>
                         <p>Milestone Builders takes pride in transforming your ideas into concrete reality, <br /> one milestone at a time. <br /><br />
-                            We're not just builders; we're visionaries. Choose VisionCraft for construction <br /> that exceeds your imagination.</p>
+                            We are not just builders; we are visionaries. Choose VisionCraft for construction <br /> that exceeds your imagination.</p>
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@ const Exterior = () => {
                     </div>
                     <div className="texts">
                         <h1>HOUSE CONSTRUCTION</h1>
-                        <p>Your Vision, Our Blueprint: At Pinnacle Properties, we're dedicated to making <br /> your dream home a reality. <br /><br />
+                        <p>Your Vision, Our Blueprint: At Pinnacle Properties, we are dedicated to making <br /> your dream home a reality. <br /><br />
                             From Plan to Perfection: Prism House Builders transforms your ideas into <br /> elegant living spaces</p>
                     </div>
                 </div>
