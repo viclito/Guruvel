@@ -21,7 +21,7 @@ const Footer = () => {
                     <h4>CONTACT DETAILS</h4>
                     <p><span>EMAIL :</span>sivaguruvel@outlook.in</p>
                     <p><span>MOBILE :</span>9655933339</p>
-                    <p><span>EMAIL :</span>Plot no: 86 , Thirukuraiar nagar , Arumparthapuram <br/> Puducherry -605110</p>
+                    <p><span>ADDRESS :</span>Plot no: 86 , Thirukuraiar nagar , Arumparthapuram <br/> Puducherry -605110</p>
 
                 </div>
             </div>

@@ -16,7 +16,7 @@ const About = () => {
             <div className="siva">
               <div className="left">
                 <div className="img">
-                  <Image src="/image/shiva.png" alt='' fill={true}/>
+                  <Image src="/image/shiva.jpeg" alt='' fill={true}/>
                 </div>
               </div>
               <div className="right">
@@ -26,7 +26,7 @@ const About = () => {
             <div className="sathish">
               <div className="left">
                 <div className="img">
-                  <Image src="/image/sathish.png" alt='' fill={true}/>
+                  <Image src="/image/sathish.jpeg" alt='' fill={true}/>
                 </div>
               </div>
               <div className="right">
